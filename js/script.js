@@ -11,10 +11,12 @@ for(let i = 1;i<=100;i++){
      singleNumber += ` ${i}`;
      console.log(singleNumber);
     if(100 % singleNumber == 3){
-        console.log(fizzWord);
+        let singleNumber = "fizz";
+        console.log(singleNumber)
     }
     else if(100 % singleNumber == 5){
-        console.log(buzzWord);
+        let singleNumber = "buzz";
+        console.log(singleNumber);
     }
+    fullNumbers.innerHTML = singleNumber;
 }
-fullNumbers.innerHTML = singleNumber;
