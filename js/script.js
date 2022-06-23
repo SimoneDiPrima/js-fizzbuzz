@@ -1,22 +1,31 @@
 
 const fullNumbers = document.getElementById("numbers");
 
+
 let boxNumber= document.getElementById("box-small");
 let content =document.getElementById("content");
+
 let singleNumber= "";
 
+
+
 for(let i = 1;i<=100;i++){
-    singleNumber +=  `  ${i}`;
-    console.log(singleNumber);
     if (i % 5 === 0 && i % 3 === 0){
-        singleNumber += "buzzfizz";
+        singleNumber += ` buzzfizz `;
+      
     }
-    if(i % 3 === 0){
-        singleNumber += "fizz";
+    else if(i % 3 === 0){
+        singleNumber += ` fizz `;
+        
     }
     else if (i % 5 === 0){
-        singleNumber += "buzz";
+        singleNumber += ` buzz `;
+    
     }
-    console.log(i)
+    else{
+        singleNumber +=  `  ${i}`;
+        console.log(singleNumber);
+    }
+    console.log(fullNumbers)
     fullNumbers.innerHTML = singleNumber;
 }
