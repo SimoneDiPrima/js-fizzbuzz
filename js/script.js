@@ -13,7 +13,7 @@ for(let i = 1;i<=100;i++){
     if(100 % singleNumber == 3){
         console.log(fizzWord);
     }
-    else if(100 % singleNumber == 3){
+    else if(100 % singleNumber == 5){
         console.log(buzzWord);
     }
 }
