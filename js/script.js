@@ -9,14 +9,14 @@ for(let i = 1;i<=100;i++){
     singleNumber +=  `  ${i}`;
     console.log(singleNumber);
     if (i % 5 === 0 && i % 3 === 0){
-        singleNumber = singleNumber.replace(i , "BUZZFIZZ");
+        singleNumber += "buzzfizz";
     }
     if(i % 3 === 0){
-        singleNumber = singleNumber.replace(i , "FIZZ");  
+        singleNumber += "fizz";
     }
     else if (i % 5 === 0){
-        singleNumber = singleNumber.replace(i , "BUZZ");
+        singleNumber += "buzz";
     }
-    console.log(fullNumbers)
+    console.log(i)
     fullNumbers.innerHTML = singleNumber;
 }
