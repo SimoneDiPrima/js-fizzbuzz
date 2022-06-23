@@ -12,20 +12,16 @@ let singleNumber= "";
 for(let i = 1;i<=100;i++){
     if (i % 5 === 0 && i % 3 === 0){
         singleNumber += ` buzzfizz `;
-      
     }
     else if(i % 3 === 0){
-        singleNumber += ` fizz `;
-        
+        singleNumber += ` fizz `; 
     }
     else if (i % 5 === 0){
         singleNumber += ` buzz `;
-    
     }
     else{
         singleNumber +=  `  ${i}`;
         console.log(singleNumber);
     }
-    console.log(fullNumbers)
-    fullNumbers.innerHTML = singleNumber;
 }
+fullNumbers.innerText = singleNumber;
